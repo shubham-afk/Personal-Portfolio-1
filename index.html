@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4e94b855b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.jpg" class="logo" />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-ellipsis-vertical" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full-Stack Developer</p>
+          <h1>
+            Hi, I am <span data-text="Shubham"> Shubham</span> from India.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Coder.jpg" class="coder-img" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello there! I am a passionate Full Stack Developer currently
+              working at Deloitte USI, where I thrive in the dynamic world of
+              technology. Armed with a B.Tech in Computer Science, I bring a
+              solid foundation to my craft. My journey in the realm of
+              programming has allowed me to develop an exceptional grasp of
+              various cutting-edge technologies, alongside a profound
+              understanding of data structures and algorithms that power them.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Full-Stack Developer</span><br />Creating Web Api and
+                  FrontEnd Website
+                </li>
+                <li>
+                  <span>Backend Developer</span><br />Working on Python and Cli
+                  Scripts to Generate Desirable Results
+                </li>
+                <li>
+                  <span>Android Developer</span><br />Designing and Creating
+                  Android Apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>March'23-Current</span><br />Full Stack Developer At
+                  Deloitte
+                </li>
+                <li>
+                  <span>July'22-March'23</span><br />Working as a Backend
+                  Developer as a Python Developer At Deloitte
+                </li>
+                <li>
+                  <span>January'22-April'22</span><br />Internship at Deloitte
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022</span><br />B.Tech from CGC Jhanjeri</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Full Stack Developer</h2>
+            <p>
+              Working as a Full-Stack Developer In Deloitte where I work on
+              Frontend as well as Backend
+            </p>
+            <a href="https://www2.deloitte.com/us/en.html">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-terminal"></i>
+            <h2>Back-End Developer</h2>
+            <p>
+              Worked as a Backend Developer where I worked upon Python Scripts
+              and was responsible for<br />
+              increasing the efficieny of the result generated.
+            </p>
+            <a href="https://www2.deloitte.com/us/en.html">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code-branch"></i>
+            <h2>Intern as a Developer</h2>
+            <p>
+              Worked on Command Line and Python Scripts that helped generate
+              reports and Increased efficieny in the daily report generation.
+            </p>
+            <a href="https://www2.deloitte.com/us/en.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="aa.jpg" />
+            <div class="layer">
+              <h3>Needify</h3>
+              <p>
+                Designed an Android App that handles household's daily
+                maintenance. Users can easily book a serviceman for a wide-range
+                of services (Carpenter, Plumber).
+              </p>
+              <a href="https://github.com/shubham-afk/NEEDIFY"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="maskdetection.jpeg" />
+            <div class="layer">
+              <h3>Mask Detection Project</h3>
+              <p>
+                Designed a Machine Learning Algorithm to detect whether a User
+                is wearing a mask or not.
+              </p>
+              <a href="https://github.com/shubham-afk/FACE-MASK-DETECTION"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/shubham-afk" class="btn">See More</a>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> stiwary48@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 7004033702</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/shubham0911/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/shubham-afk"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="New Resume Shubham.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <span>&#169;</span> Shubham. All rights reserved</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sideMenu");
+      function openMenu() {
+        sidemeu.style.right = "0";
+      }
+      function closeMenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
